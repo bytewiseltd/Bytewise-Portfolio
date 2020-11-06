@@ -2,6 +2,11 @@
 <html lang="en">
     <head>
         <title>My First Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="style/style.css">
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -38,18 +43,122 @@
   #nav-bar-left .active {
     background-color: #4CAF50;
   }
-        
+        .sidebar
+{
+    margin: 0;
+    margin-top: -70px;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #333333;
+    transition: all 0.5s ease;
+}
+.sidebar header
+{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 47px;
+    background: #202020;
+    user-select: none;
+}
+
+ul
+{
+    margin-top: 20px;
+}
+.sidebar ul a
+{
+    display: block;
+    color: white;
+    height: 100%;
+    width: 100%;
+    line-height: 80px;
+    font-size: 20px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.sidebar .option  li:hover a
+{
+    padding-left: 50px;
+    
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check
+{
+    display: none;
+}
+label #btn,label #cancel
+{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 6px;
+}
+label #btn
+{
+    left: 5px;
+    top: 1px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all 0.5s ease;
+    position: fixed;
+    
+}
+label #btn:hover
+{
+    color: #8C6E26;
+}
+label #cancel
+{
+    z-index: 1111;
+    left: -195px;
+    top: 4px;
+    font-size: 30px;
+    color: white;
+    padding: 4px 9px;
+    transition: 0.46s ease;
+    position: fixed;
+}
+label #cancel:hover
+{
+    color: #8C6E26;
+    
+}
+#check:checked ~ .sidebar
+{
+    left: 0;
+}
+#check:checked ~ label #btn
+{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+#check:checked ~ label #cancel
+{
+    left: 210px;
+    
+}
         </style>
     </head>
     <body>
          <header>
             <nav id="nav-bar-left">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#news">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about-us.html">About</a></li>
+                    <li><a href="../Portfolio/Portfolio.html">Portfolio</a></li>
+                    <li><a href="../Contact/Contact.html">Contact</a></li>
                   </ul>
             </nav>
         </header>
@@ -62,13 +171,11 @@
         <div class="sidebar">
         <header>MENU</header>
             <ul class="option">
-                <li><a href="#"><i class="fas fa-qrcode "></i>Dashboard</a></li>
-                <li><a href="#"><i class="fas fa-link "></i>Shortcut</a></li>
-                <li><a href="#"><i class="fas fa-stream "></i>Overview</a></li>
-                <li><a href="#"><i class="fas fa-calendar-week "></i>Event</a></li>
-                <li><a href="#"><i class="far fa-question-circle "></i>About </a></li>
-                <li><a href="#"><i class="fas fa-sliders-h "></i>Services</a></li>
-                <li><a href="#"><i class="far fa-envelope "></i>Contact</a></li>
+                <li><a href="index.html"><i class="fas fa-qrcode "></i>Members</a></li>
+                <li><a href="../job_details.html"><i class="fas fa-link "></i>Job Details</a></li>
+                <li><a href="../job_listing.html"><i class="fas fa-stream "></i>Job Listing</a></li>
+                <li><a href="../open-positions.html"><i class="fas fa-calendar-week "></i>Open Position</a></li>
+                <li><a href="../bytewise-magazine.html"><i class="far fa-question-circle "></i>Magazine</a></li>
             
             </ul>
         

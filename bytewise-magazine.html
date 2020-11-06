@@ -1,0 +1,238 @@
+<html>
+    <head>
+        <title>ByteWise-Magazine</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Byteise</title>
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+      <script
+         src="https://code.jquery.com/jquery-3.5.1.js"
+         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="bytewise-magazine.css">
+    <style>
+        #nav-bar-left li {
+      float: right;
+  }
+
+  #nav-bar-left ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #nav-bar-left li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+      transition: 0.3s ease;
+  }
+  
+  #nav-bar-left li a:hover:not(.active) 
+        {
+        background-color: #111;
+        }
+  
+  #nav-bar-left .active {
+    background-color: #4CAF50;
+  }
+        .sidebar
+{
+    margin: 0;
+    margin-top: -50px;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 110%;
+    background: #333333;
+    transition: all 0.5s ease;
+    z-index: 6;
+}
+.sidebar header
+{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 47px;
+    background: #202020;
+    user-select: none;
+}
+
+ul
+{
+    margin-top: 20px;
+}
+.sidebar ul a
+{
+    display: block;
+    color: white;
+    height: 100%;
+    width: 100%;
+    line-height: 80px;
+    font-size: 20px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.sidebar .option  li:hover a
+{
+    padding-left: 50px;
+    
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check
+{
+    display: none;
+}
+label #btn,label #cancel
+{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 6px;
+}
+label #btn
+{
+    left: 5px;
+    top: 1px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all 0.5s ease;
+    position: fixed;
+    
+}
+label #btn:hover
+{
+    color: #8C6E26;
+}
+label #cancel
+{
+    z-index: 1111;
+    left: -195px;
+    top: 4px;
+    font-size: 30px;
+    color: white;
+    padding: 4px 9px;
+    transition: 0.46s ease;
+    position: fixed;
+}
+label #cancel:hover
+{
+    color: #8C6E26;
+    
+}
+#check:checked ~ .sidebar
+{
+    left: 0;
+}
+#check:checked ~ label #btn
+{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+#check:checked ~ label #cancel
+{
+    left: 210px;
+    
+}
+        </style>
+    </head>
+    
+    
+    <body>
+         <header>
+            <nav id="nav-bar-left">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="Portfolio/Portfolio.html">Portfolio</a></li>
+                    <li><a href="Contact/Contact.html">Contact</a></li>
+                  </ul>
+            </nav>
+        </header>
+        
+        <input type="checkbox" id="check">
+            <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+            </label>
+        <div class="sidebar">
+        <header>MENU</header>
+            <ul class="option">
+                <li><a href="obaidak/index.html"><i class="fas fa-qrcode "></i>Members</a></li>
+                <li><a href="job_details.html"><i class="fas fa-link "></i>Job Details</a></li>
+                <li><a href="job_listing.html"><i class="fas fa-stream "></i>Job Listing</a></li>
+                <li><a href="open-positions.html"><i class="fas fa-calendar-week "></i>Open Position</a></li>
+                <li><a href="bytewise-magazine.html"><i class="far fa-question-circle "></i>Magazine</a></li>
+            
+            </ul>
+        
+        </div>
+        
+            <div class="front-page">
+                <div class="caption">
+                    <h2>Find the best articles and book summaries</h2>
+                    <h3>Read and learn new things</h3>
+                </div>
+                
+            </div>
+        </header>
+
+        <section>
+            <div class="Articles">
+                <h2 style="text-align: center; text-transform: uppercase;">Top Articles</h2>
+                <h3><a href="#">Calculus, computer science and our lives </a></h3>
+                <h3><a href="#">What is git and github</a> </h3>
+                <h3><a href="#">AI in Pakistan</a> </h3>
+            </div>
+            <div class="book-summaries">
+                <h2 style="text-align: center; text-transform: uppercase;">Top Books Summaries</h2>
+                <h3><a href="#">1984 by George Orwell</a> </h3>
+                <h3><a href="#">To kill a mockingbird by Harper Lee</a> </h3>
+                <h3><a href="#">Autobiography of Malcolm X</a> </h3>
+            </div>
+        </section>
+
+        <section class= "scroll-section">
+           <div class="story">
+            <h2><a href="#">Calculus, computer science and our lives</a> </h2>
+                <img src="dummy.png" alt="image" class="image"> 
+            <hr style="box-shadow: 1px 1px 1px green; margin-top: 20px;">
+           </div>
+
+           <div class="story">
+            <h2><a href="#">1984 by George Orwell</a> </h2>
+                <img src="dummy.png" alt="image" class="image"> 
+            <hr style="box-shadow: 1px 1px 1px green; margin-top: 20px;">
+           </div>
+                
+           <div class="story">
+            <h2><a href="#">Autobiography of Malcolm X</a> </h2>
+                <img src="dummy.png" alt="image" class="image"> 
+            <hr style="box-shadow: 1px 1px 1px green; margin-top: 20px;">
+           </div>
+            
+
+            <div class="story">
+                <h2><a href="#">AI in Pakistan</a> </h2>
+                <img src="dummy.png" alt="image" class="image"> 
+            <hr style="box-shadow: 1px 1px 1px green; margin-top: 20px;">
+            </div>
+
+            
+            
+        </section>
+    </body>
+</html>
