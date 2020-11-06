@@ -22,6 +22,179 @@
             <link rel="stylesheet" href="assets/css/slick.css">
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+        
+        
+        #nav-bar-left li {
+      float: right;
+  }
+
+  #nav-bar-left ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #nav-bar-left li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+      transition: 0.3s ease;
+  }
+  
+  #nav-bar-left li a:hover:not(.active) 
+        {
+        background-color: #111;
+        }
+  
+  #nav-bar-left .active {
+    background-color: #4CAF50;
+  }
+        .sidebar
+{
+    margin: 0;
+    margin-top: -76px;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 110%;
+    background: #333333;
+    transition: all 0.5s ease;
+    z-index: 6;
+}
+.sidebar header
+{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 47px;
+    background: #202020;
+    user-select: none;
+}
+
+ul
+{
+    margin-top: 20px;
+}
+.sidebar ul a
+{
+    display: block;
+    color: white;
+    height: 100%;
+    width: 100%;
+    line-height: 80px;
+    font-size: 20px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.sidebar .option  li:hover a
+{
+    padding-left: 50px;
+    
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check
+{
+    display: none;
+}
+label #btn,label #cancel
+{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 6px;
+}
+label #btn
+{
+    left: 5px;
+    top: 1px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all 0.5s ease;
+    position: fixed;
+    
+}
+label #btn:hover
+{
+    color: #8C6E26;
+}
+label #cancel
+{
+    z-index: 1111;
+    left: -195px;
+    top: 4px;
+    font-size: 30px;
+    color: white;
+    padding: 4px 9px;
+    transition: 0.46s ease;
+    position: fixed;
+}
+label #cancel:hover
+{
+    color: #8C6E26;
+    
+}
+#check:checked ~ .sidebar
+{
+    left: 0;
+}
+#check:checked ~ label #btn
+{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+#check:checked ~ label #cancel
+{
+    left: 210px;
+    
+}
+        </style>
+    </head>
+    <body>
+         <header>
+            <nav id="nav-bar-left">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="Portfolio/Portfolio.html">Portfolio</a></li>
+                    <li><a href="Contact/Contact.html">Contact</a></li>
+                  </ul>
+            </nav>
+        </header>
+        
+        <input type="checkbox" id="check">
+            <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+            </label>
+        <div class="sidebar">
+        <header>MENU</header>
+            <ul class="option">
+                <li><a href="obaidak/index.html"><i class="fas fa-qrcode "></i>Members</a></li>
+                <li><a href="job_details.html"><i class="fas fa-link "></i>Job Details</a></li>
+                <li><a href="job_listing.html"><i class="fas fa-stream "></i>Job Listing</a></li>
+                <li><a href="open-positions.html"><i class="fas fa-calendar-week "></i>Open Position</a></li>
+                <li><a href="bytewise-magazine.html"><i class="far fa-question-circle "></i>Magazine</a></li>
+            
+            </ul>
+        
+        </div>
+        
+=======
    </head>
 
    <body>
@@ -70,6 +243,7 @@
        </div>
         <!-- Header End -->
     </header>
+
     <main>
 
         <!-- Hero Area Start-->
