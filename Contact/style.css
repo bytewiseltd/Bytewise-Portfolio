@@ -168,15 +168,17 @@ body{
 }
 
 #FAQ select{
-    font-size: 50px;
+    font-size: 30px;
+    width: 300px;
+    height: 100px;
     color: white;
     background-color: transparent;
     border-radius: 0%;
-    border: solid white 5px;
+    border: solid white 3px;
 }
 
 #FAQ option{
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     background-color: black; 
 }
